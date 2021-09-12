@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NEWS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<link href="https://css.gg/css?=|eye|instagram|twitter" rel="stylesheet">
+	<script src="/script/main_script.js"></script>
+
+</head>
+<body>
+	
+<!-- header begins -->
+<div>
+	<nav class="nav">
+		<div class="nav_wrapper">
+			<div id="brand"><a href="/"><span>Cher</span>News</a></div>
+			<% if(!currentUser){ %>
+				<li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a href="/login">Log in</a></li>
+				<li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">Sign up</a></li>
+			<% } else { %>
+				<li><a href="#">Signed in as <%= currentUser.username %></a></li>
+				<li><a href="/logout">Log out</a></li>
+			<% } %>
+		</div>
+	</nav>
+</div>
+<!-- header ends -->
