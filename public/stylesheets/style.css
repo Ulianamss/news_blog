@@ -1,1 +1,430 @@
+body{
+    /* flex: 0 1 auto; */
+    margin: 0;
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 50%, rgba(252,176,69,0.7036383188914958) 100%); 
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.title_link{
+    color: black;
+}
+/* 
+  @media (max-width: 960px){
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: none
+          "col-1"
+          "col-2"
+          "col-3"
+          "col-4";
+    }
+    .theme{
+        flex-basis: 50%;
+    }
+  } */
+  
+.nav_wrapper, nav{
+  font-family: 'Comfortaa', cursive; 
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
 
+}
+
+.nav_wrapper{
+  background: #000;
+}
+
+/* .selected{
+  font-size: 140%;
+  margin: auto;
+} */
+li{
+  list-style-type: none;
+  width: 100%;
+  display: inline;
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 120%;
+}
+
+#brand{
+  font-family: 'Comfortaa', cursive;
+  font-size: 350%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 7%;
+  margin-right: 50%;
+  padding: 1% 10px;
+}
+
+span{
+  /* color: rgba(254, 150, 180, 1); */
+  color: red;
+  text-decoration: upline;
+  font-family: 'Dancing Script', cursive;
+  font-weight:300;
+  font-size: 100%;
+}  
+
+ /* =====================HEADER============================== */ 
+
+
+
+/* ============================INDEX============================ */
+
+.container{
+    margin: 2%;
+    padding: 2%;
+}
+
+img{
+    width: 20%;
+}
+
+.left{
+    background: white;
+    padding: 2%;
+    width: 40%;
+    display: flex;
+    flex-direction: row; 
+    /* position: absolute;
+    left: 0; 
+    top: 0;  */
+    
+}
+.right{
+    border: 2px solid violet;
+    background: white;
+    padding: 2%;
+    width: 45%;
+    display: flex;
+    flex-direction: row; 
+    /* position: absolute;
+    right: 0; 
+    top: 0;  */
+}
+ 
+.left_1block{
+    width: 45%;
+    /* width: 100%; */
+    background: white;
+    padding: 2%;
+    margin-right:1% ;
+    float: left;
+}
+.article1{
+    background: white;
+}
+  
+
+.left_2block{
+    float: left;
+    background: white;
+}
+.article2{
+    background: white;
+    padding: 2%;
+}
+
+.right_1block{
+    background: white;
+    width: 12.5%;
+    padding: 2%;
+    /* padding-right: 0; */
+    display: table; 
+    float: left;
+
+}
+
+.article_row{
+    padding: 4%;
+    background: rgba(126, 91, 91, 0.3);
+        /* display: table-cell; */
+    /* float: left;  */
+}
+.right1_block_theme{
+    font-size: 150%;
+}
+
+.img1{
+    width: 100%;
+}
+
+.img2{
+    width: 100%;
+}
+  
+.img3{
+    width: 100%;
+} 
+.img4{ 
+    /* width: 100%; */
+    /*  width: 20%; */
+    padding: 3% 0;
+}
+
+
+/* ============================INDEX============================ */
+
+
+
+/* ============================SHOW============================ */
+
+
+  .show_content{
+    margin:5% 5%;
+    background: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    padding: 2%;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  
+.show_desc{
+  background: seashell;
+  width: 43%;
+  margin-bottom: 2%;
+  border-radius: 22px;
+  margin-top: 2%;
+  margin-right: 2%;
+  padding:1.5%;
+  float: right;
+
+}
+
+.div_img_show{
+  width: 45%;
+  float: left;
+  border-radius: 22px;
+  margin: 2%;
+  background: white;
+  padding: 1.5%;
+
+}
+.img_show{
+  width: 100%;
+  border-radius: 22px;
+}
+
+.title_show{
+  /* display: inline-block; */
+  vertical-align: top;
+  padding: 1.5%;
+  padding-bottom: 0;
+  font-size: 288%;
+  float: left;
+}
+
+.views_show_icon{
+  font-family: 'Comfortaa', cursive;  
+  float: left;
+  margin: 4%;
+  margin-left: 10%;
+  color: darkgray;
+}
+
+.views_show{
+  float: left;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.eye_icon{
+  float: left;
+}
+
+.theme_show{
+  padding-left:3%;
+  font-size: 170%;
+  color: darkgray;
+  float: left;
+  width: 100%;
+}
+.description_show{
+  padding: 2%;
+  font-size: 220%;
+  float: left;
+}
+
+.date_show{
+    float: right;
+    padding: 4%;
+    color: darkgray;
+    font-family: 'Comfortaa', cursive;  
+}
+
+.comments_and_btn{
+  width: 41%;
+  margin-left: 2%;
+  float: left;
+}
+
+.comments{
+  width: 100%;
+  /* background: rgb(131,58,180);
+  background: radial-gradient(circle, rgba(131,58,180,0.35) 0%, rgba(253,29,29,0.35) 50%, rgba(252,176,69,0.35036383188914958) 100%); */
+  background: white;
+  border-radius: 22px;
+  margin-bottom: 2%;
+  padding: 1.7%;
+  font-family: 'Comfortaa', cursive;  
+}
+.comment_author{
+  /* float: none; */
+  font-size: 180%;
+  border-top: 3px solid white;
+  /* border-bottom: 3px solid white; */
+  border-top-left-radius: 22px;
+  /* border-bottom-left-radius: 22px; */
+  padding: 1.5% 5%;  
+  color: black;
+  margin: 0;
+  margin-left: 1%;
+  margin-right: 30%;
+  margin-top: 1%;
+  float: left;
+}
+.comment_date{
+  width: 20%;
+  padding: 5% 47%;
+  padding-right: 0;
+  color: rgba(0, 0, 0, 0.452);
+  margin:0 30%;
+  margin-top: 3%;
+  margin-right: 5%;
+}
+
+.comment_text{
+  margin: 0;
+  padding: 1% 10%;
+  color: black;
+  margin-bottom: 1%;
+  margin-left: 1%;
+
+}
+
+
+.comments_btns{
+  display: inline;
+}
+
+.edit_comment{
+  color: aliceblue;
+  margin: 2% 0.5%;
+  margin-left: 10%;
+  background: rgba(246, 246, 24, 0.938);
+  border: none;
+  border-radius: 20px;
+  padding: 2%;
+  font-size: 120%;
+  font-family: 'Comfortaa', cursive;
+  float: left;
+}
+
+.delete_comment{
+  color: aliceblue;
+  margin: 2%;
+  background: red;
+  border: none;
+  border-radius: 22px;
+  padding: 2%;
+  font-size: 120%;
+  font-family: 'Comfortaa', cursive;
+}
+
+
+.add_comment{
+  margin-right: 6%;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 130%;
+  padding: 1% 2%;
+  color: white;
+  background:rgb(20, 236, 13);
+  /* float: right; */
+} 
+
+/* ============================SHOW============================ */
+
+
+
+/* ============================FORMS============================ */
+
+.form{
+    margin: 5% 30%;
+    font-size: 150%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 2%;
+    border-radius: 22px;
+}
+
+input{
+    font-family: 'Comfortaa', cursive;  
+    border-radius: 22px;    
+    font-size: 150%;
+    padding: 1.5% 3%;
+    margin: 3%;
+    text-decoration: none;
+
+}
+
+.btn_submit{
+    width: 90%;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 130%;
+    padding: 1.5% 0%;
+    color: white;
+    background:rgb(20, 236, 13);
+
+}
+
+
+/* ============================FORMS============================ */
+  
+  
+  
+.footer{
+  margin-top: 3% ;
+  font-family: 'Comfortaa', cursive;
+  font-size: 150%;
+  color: white;
+  background: #000;
+  padding: 1.2% 3%;
+  height: 87px;
+}
+ 
+.footer_rights{
+  width: 45%;
+  float: left;
+
+}
+
+.footer_icons{
+  margin: 10px;
+  width: 45%;
+  float: right;
+}
+
+.gg-instagram{
+  float: right;
+  margin: 2%;
+}
+
+.gg-twitter{
+  float: right;
+  margin: 2%;
+}
