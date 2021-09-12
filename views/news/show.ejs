@@ -1,0 +1,43 @@
+<%- include ('../partials/header')%>
+   
+   
+<div class="show_content">  
+    <div class="div_img_show"><img class="img_show" src="<%= article.image %>"></div>
+    <div class="show_desc"> 
+        <div class="title_show"><%=article.title%></div>
+        <div class="views_show_icon">
+            <div class="views_show"><%=article.views%></div>
+            <div class="eye_icon"><i class="gg-eye"></i></div>
+        </div>
+        <div class="theme_show"><%=article.theme%></div>
+        <div class="description_show"><%=article.description%></div>
+        <div class="date_show"><%= moment(article.createdAt).fromNow() %></div>
+      
+    </div>
+    <div class="comments_and_btn">
+        <div class="comments">
+            <% article.comments.forEach(function(comment){ %>
+                <hr>
+                <p class="comment_author"><strong><%=comment.author.username%></strong></p>
+                <p class="comment_date"><%= moment(comment.createdAt).fromNow() %></p>
+                <p class="comment_text"><%=comment.text%></p>
+                <div class="comments_btns">
+                    <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+                    <form action="/news/<%=article._id %>/comments/<%=comment._id %>/edit">
+                        <button class="edit_comment" type="submit">Edit</button>
+                    </form>
+                    <form action="/news/<%=article._id %>/comments/<%=comment._id %>?_method=DELETE" method="POST">
+                        <input class="delete_comment" type="submit" value="Delete">
+                    </form>
+                    <p></p>
+                    <% } %>
+                </div>
+                <hr>
+            <% }) %>
+        </div>  
+        <button class="add_comment"><a href="<%= article._id %>/comments/new" >add new comment</a></button>    
+    </div>
+</div>
+
+<%- include ('../partials/footer') %> 
+
