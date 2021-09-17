@@ -6,22 +6,22 @@
 					<% if(article.theme =="Recent news"){ %>
 						<div class="left_1block">
 							<div class="article1">
-								<img class="img1" src="<%= article.image %>">	
+								<a  href="/news/<%= article._id %>"><img class="img1" src="<%= article.image %>"></a>	
 								<div class="left_1block_text">
 									<div class="title1_index"><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
-									<div class="description1_index"><%=article.description%></div>
+									<div class="description1_index"><a class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
 								</div>
 							</div>
 						</div>
 					<%}%>		
 	
-					<!-- <% if(article.theme =="Cars"){ %>	
+					<% if(article.theme =="Cars"){ %>	
 						<div class="left_2block">
 							<div class="article2">
-								<img  class="img4" src="<%= article.image %>">			
+								<a  href="/news/<%= article._id %>"><img  class="img3" src="<%= article.image %>"></a>			
 								<div class="left_2block_text">
 									<div><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
-									<div class="description_index"><%=article.description%></div>
+									<div class="description_index"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
 								</div>	
 							</div>
 						</div> 
@@ -30,14 +30,14 @@
 					<% if(article.theme =="Лес"){ %>	
 						<div class="left_3block">
 							<div class="article3">
-								<img  class="img3" src="<%= article.image %>">			
-								<div class="left_2block_text">
+								<a  href="/news/<%= article._id %>"><img  class="img3" src="<%= article.image %>"></a>			
+								<div class="left_3block_text">
 									<div><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
-									<div class="description_index"><%=article.description%></div>
+									<div class="description_index"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
 								</div>
 							</div>	
 						</div>
-					<%}%> -->
+					<%}%>
 			<!-- </div> -->
 	
 	
@@ -47,10 +47,10 @@
 						<div class="right_1block">
 							<div class="article_row">
 								<div class="right1_block_theme"><%= article.theme %></div>
-								<img class="img3" src="<%= article.image %>">			
+								<a  href="/news/<%= article._id %>"><img class="img4" src="<%= article.image %>"></a>		
 								<div>
 									<div class="title_index_three_row"><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
-									<div class="description_index_three_row"><%=article.description%></div>
+									<div class="description_index_three_row"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
 								</div>
 							</div>
 						</div>					

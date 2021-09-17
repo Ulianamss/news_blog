@@ -17,7 +17,7 @@
     <div class="comments_and_btn">
         <div class="comments">
             <% article.comments.forEach(function(comment){ %>
-                <hr>
+                <!-- <hr> -->
                 <p class="comment_author"><strong><%=comment.author.username%></strong></p>
                 <p class="comment_date"><%= moment(comment.createdAt).fromNow() %></p>
                 <p class="comment_text"><%=comment.text%></p>
@@ -32,7 +32,7 @@
                     <p></p>
                     <% } %>
                 </div>
-                <hr>
+                <!-- <hr> -->
             <% }) %>
         </div>  
         <button class="add_comment"><a href="<%= article._id %>/comments/new" >add new comment</a></button>    
