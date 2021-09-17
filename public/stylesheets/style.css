@@ -1,15 +1,16 @@
 body{
-    /* flex: 0 1 auto; */
-    margin: 0;
-    background: rgb(131,58,180);
-    background: radial-gradient(circle, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 50%, rgba(252,176,69,0.7036383188914958) 100%); 
+  /* flex: 0 1 auto; */
+  margin: 0;
+  /* background: white; */
+  background: rgb(131,58,180);
+  background: radial-gradient(circle, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 50%, rgba(252,176,69,0.7036383188914958) 100%); 
 }
 a{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-.title_link{
-    color: black;
+.title_link, .description_link{
+  color: black;
 }
 /* 
   @media (max-width: 960px){
@@ -80,95 +81,93 @@ span{
 /* ============================INDEX============================ */
 
 .container{
-    margin: 2%;
-    padding: 2%;
+  margin: 2%;
+  padding: 2%;
 }
 
 img{
-    width: 20%;
+  width: 20%;
 }
 
-.left{
-    background: white;
-    padding: 2%;
-    width: 40%;
-    display: flex;
-    flex-direction: row; 
-    /* position: absolute;
-    left: 0; 
-    top: 0;  */
-    
+.img1{
+  width: 100%;
 }
-.right{
-    border: 2px solid violet;
-    background: white;
-    padding: 2%;
-    width: 45%;
-    display: flex;
-    flex-direction: row; 
-    /* position: absolute;
-    right: 0; 
-    top: 0;  */
+.img2{
+  width: 100%;
+}
+.img3{
+  width: 100%;
+}
+.img4{ 
+  width: 100%;
+  padding: 3% 0;
 }
  
 .left_1block{
-    width: 45%;
-    /* width: 100%; */
-    background: white;
-    padding: 2%;
-    margin-right:1% ;
-    float: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  background: white;
+  padding: 2%;
+  margin-right:1%;
+  margin-bottom: 2%;
 }
 .article1{
-    background: white;
+  background: white;
 }
   
 
 .left_2block{
-    float: left;
-    background: white;
+  /* margin: 2% 0;
+  width: 45% ;
+  background: rgb(12, 42, 212); */
+  background: white;
+  width: 12.5%;
+  padding: 2%;
+  display: table; 
+  display: inline-block;
+  vertical-align: top;
 }
 .article2{
-    background: white;
-    padding: 2%;
+  background: rgb(233, 42, 42);
+  margin: 2%;
+  /* padding: 2%; */
 }
 
-.right_1block{
-    background: white;
-    width: 12.5%;
-    padding: 2%;
-    /* padding-right: 0; */
-    display: table; 
-    float: left;
+.left_3block{
+  margin: 2% 0;
 
+  width: 45% ;
+  background: rgb(12, 42, 212);
+}
+.article2{
+  margin: 2%;
+
+}
+
+
+.right_1block{
+  background: white;
+  width: 12.5%;
+  padding: 2%;
+  /* padding-right: 0; */
+  display: table; 
+  float: right;
 }
 
 .article_row{
-    padding: 4%;
-    background: rgba(126, 91, 91, 0.3);
-        /* display: table-cell; */
-    /* float: left;  */
+  padding: 4%;
+  background: rgba(126, 91, 91, 0.3);
+      /* display: table-cell; */
+  /* float: left;  */
 }
 .right1_block_theme{
-    font-size: 150%;
+  font-size: 150%;
 }
 
-.img1{
-    width: 100%;
-}
 
-.img2{
-    width: 100%;
-}
-  
-.img3{
-    width: 100%;
-} 
-.img4{ 
-    /* width: 100%; */
-    /*  width: 20%; */
-    padding: 3% 0;
-}
+
+
 
 
 /* ============================INDEX============================ */
@@ -178,17 +177,18 @@ img{
 /* ============================SHOW============================ */
 
 
-  .show_content{
-    margin:5% 5%;
-    background: rgba(255, 255, 255, 0.3);
-    width: 90%;
-    padding: 2%;
-    border-radius: 22px;
-    overflow: hidden;
-  }
+.show_content{
+  margin:5% 5%;
+  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(0, 0, 0, 0.1); */
+  width: 90%;
+  padding: 2%;
+  border-radius: 22px;
+  overflow: hidden;
+}
   
 .show_desc{
-  background: seashell;
+  background: white;
   width: 43%;
   margin-bottom: 2%;
   border-radius: 22px;
@@ -254,10 +254,10 @@ img{
 }
 
 .date_show{
-    float: right;
-    padding: 4%;
-    color: darkgray;
-    font-family: 'Comfortaa', cursive;  
+  float: right;
+  padding: 4%;
+  color: darkgray;
+  font-family: 'Comfortaa', cursive;  
 }
 
 .comments_and_btn{
@@ -279,10 +279,8 @@ img{
 .comment_author{
   /* float: none; */
   font-size: 180%;
-  border-top: 3px solid white;
-  /* border-bottom: 3px solid white; */
+  border-top: 3px solid rgb(204, 204, 204);
   border-top-left-radius: 22px;
-  /* border-bottom-left-radius: 22px; */
   padding: 1.5% 5%;  
   color: black;
   margin: 0;
@@ -295,6 +293,7 @@ img{
   width: 20%;
   padding: 5% 47%;
   padding-right: 0;
+  padding-bottom: 0;
   color: rgba(0, 0, 0, 0.452);
   margin:0 30%;
   margin-top: 3%;
@@ -304,6 +303,7 @@ img{
 .comment_text{
   margin: 0;
   padding: 1% 10%;
+  padding-bottom: 2%;
   color: black;
   margin-bottom: 1%;
   margin-left: 1%;
@@ -360,38 +360,50 @@ img{
 /* ============================FORMS============================ */
 
 .form{
-    margin: 5% 30%;
-    font-size: 150%;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 2%;
-    border-radius: 22px;
+  margin: 5% 30%;
+  font-size: 150%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2%;
+  border-radius: 22px;
 }
 
 input{
-    font-family: 'Comfortaa', cursive;  
-    border-radius: 22px;    
-    font-size: 150%;
-    padding: 1.5% 3%;
-    margin: 3%;
-    text-decoration: none;
+  font-family: 'Comfortaa', cursive;  
+  border-radius: 22px;    
+  font-size: 150%;
+  padding: 1.5% 3%;
+  margin: 3%;
+  text-decoration: none;
 
 }
 
 .btn_submit{
-    width: 90%;
-    margin-left: 3%;
-    margin-top: 3%;
-    border-radius: 15px;
-    border: none;
-    text-decoration: none;
-    font-family: 'Comfortaa', cursive;
-    font-size: 130%;
-    padding: 1.5% 0%;
-    color: white;
-    background:rgb(20, 236, 13);
-
+  width: 90%;
+  margin-left: 3%;
+  margin-top: 3%;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 130%;
+  padding: 1.5% 0%;
+  color: white;
+  background:rgb(20, 236, 13);
 }
 
+.add_com{
+  font-size: 200%;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 35%;
+}
+
+.add_com_title{
+  font-size: 200%;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 37.5%;
+}
 
 /* ============================FORMS============================ */
   
