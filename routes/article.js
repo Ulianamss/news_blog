@@ -41,6 +41,7 @@ router.get("/news/:id", function(req, res){
         } else {
             foundarticle.views++;
             // article.views.save();
+            foundarticle.save();
             //render show template with that article
             res.render("news/show", {article: foundarticle});
         }

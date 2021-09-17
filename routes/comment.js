@@ -63,10 +63,21 @@ router.get("/news/:id/comments/:comment_id/edit", middleware.checkCommentOwnersh
 });
 });
 
+// COMMENT UPDATE
+router.put("/news/:id/comments/:comment_id", middleware.checkCommentOwnership, function(req, res){
+    comment.findByIdAndUpdate(req.params.comment_id, req.body.comment, function(err, updatedcomment){
+       if(err){
+           res.redirect("back");
+       } else {
+           res.redirect("/news/" + req.params.id );
+       }
+    });
+ });
+
 // COMMENT DESTROY ROUTE
-router.delete("news/:id/comments/:comment_id", middleware.checkCommentOwnership, function(req, res){
+router.delete("/news/:id/comments/:comment_id", middleware.checkCommentOwnership, function(req, res){
     //findByIdAndRemove
-    Comment.findByIdAndRemove(req.params.comment_id, function(err){
+    comment.findByIdAndRemove(req.params.comment_id, function(err){
        if(err){
            res.redirect("back");
        } else {
