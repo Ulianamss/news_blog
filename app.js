@@ -5,11 +5,12 @@ const
     mongoose          = require("mongoose"),
     DB_url            = 'mongodb+srv://user:user@cluster0.dehor.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     port              = process.env.PORT || 3000,
-    seedDB            = require("./seeds"),
+    // seedDB            = require("./seeds"),
     article           = require("./models/article"),
     Comment           = require("./models/comment"),
     methodOverride    = require("method-override"),
     flash             = require("connect-flash"),
+    session           = require('express-session'),
     passport          = require("passport"),
     LocalStrategy     = require("passport-local"), 
     User              = require("./models/user"),
@@ -26,9 +27,26 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 app.set("view engine","ejs");
 app.use(methodOverride("_method"));
-app.use(flash());
 app.locals.moment = require('moment');
-seedDB()
+// app.use(flash());
+
+// seedDB()
+
+app.use(session({
+	secret:':))',
+	saveUninitialized: true,
+	resave: true
+}));
+
+app.use(flash());
+
+//Global varibales
+app.use(function (req, res, next) {
+    res.locals.error = req.flash('error');
+    res.locals.success = req.flash('success');
+    next();
+});
+
 
 //======================MONGODB======================\\
 async function startapp() {
@@ -66,16 +84,6 @@ app.use(function(req, res, next){
    next();
 });
 //================PASSPORT CONFIGURATION==============\\
-
-// flash
-app.use(function(req,res,next){
-	res.locals.currentUser = req.user;
-	res.locals.error = req.flash('error');
-	res.locals.success = req.flash('success');
-	next();
-});
-// flash
-
 
 app.use(authRoutes);
 app.use("/", articleRoutes);
