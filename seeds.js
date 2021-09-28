@@ -64,7 +64,60 @@ const data = [
     //     description: "великолепный лес",
     //     theme: "Лес"
     // },
-  
+    // {
+    //     title: "Перевоплащение Павла", 
+    //     image:  "https://sun9-55.userapi.com/impg/m4VLKcowkY9yRem9LpXc9yhk53-as2rnsHzF-A/Gqx3EOhkIv0.jpg?size=1052x1386&quality=96&sign=a44f9f5be8f3fe53386185d6be4a645c&type=album",
+    //     description: "Павел превратился в Глеба. Стал змеем горынычем",
+    //     theme: "Универ"
+    // },
+    // {
+    //     title: "Павла Нагорская", 
+    //     image:  "https://sun9-45.userapi.com/impg/UHBjJCeLcDpNPnl0nXtbcSw4_DMM6MnGIVjkSA/yVyGhDLSLc4.jpg?size=279x604&quality=96&sign=b905e24518d5d388a295d9cce016fde2&type=album",
+    //     description: "Письмо от  князя! азязя",
+    //     theme: "Универ"
+    // },
+    // {
+    //     title: "Сидим на фп", 
+    //     image:  "https://sun9-2.userapi.com/impg/AI28WoJ8W9OUIdaxi-eMiUYknZN5F0SOGAez9Q/KiKVsgxoGRs.jpg?size=1600x1200&quality=96&sign=7ae4787adbe4aa81dceb8700165e8338&type=album",
+    //     description: "Сделайте пожалуйста лабу по фп:((",
+    //     theme: "Универ"
+    // },
+    // {
+    //     title: "Собаки))0", 
+    //     image:  "https://vk.com/video293929387_456240050?list=444ddf185a462dbe04",
+    //     description: "Гавкают на льва:((",
+    //     theme: "видео"
+    // },
+    // {
+    //     title: "Упали", 
+    //     image:  "https://vk.com/video293929387_456240049",
+    //     description:"Вот что спорт с людьми делает",
+    //     theme: "видео"
+    // },
+    // {
+    //     title: "Мой китик", 
+    //     image:  "https://vk.com/video293929387_456239540",
+    //     description: "Был... к сожалению:((",
+    //     theme: "видео"
+    // },
+    // {
+    //     title: "шутка-минутка", 
+    //     image:  "https://sun9-87.userapi.com/impg/U0skxT2yNcosObbHM9SGTbtR6WCFhNPebSrL8w/8nW9kT6pl4A.jpg?size=550x604&quality=96&sign=f1b1cc6a21437c33209df13789ed3174&type=album",
+    //     description: "очень смешной прикол",
+    //     theme: "Приколы"
+    // },
+    // {
+    //     title: "прикол", 
+    //     image:  "https://sun9-13.userapi.com/impg/cVt4nKk_8ToBxj43PKG4SHykWKfPlAuF6mOpPw/5ac5ql_8l6o.jpg?size=480x580&quality=96&sign=08ff01410e778923f2ee0e2369f370d3&type=album",
+    //     description:"несмешной прикол",
+    //     theme: "Приколы"
+    // },
+    // {
+    //     title: "Прикольчик", 
+    //     image:  "https://sun9-84.userapi.com/impf/c540102/v540102726/1de36/nnJRNYxTgCQ.jpg?size=480x483&quality=96&sign=09d395dab11ab8c60b360435f765a48f&type=album",
+    //     description: "прикольный прикол",
+    //     theme: "Приколы"
+    // },
 ]
 
 function seedDB(){
