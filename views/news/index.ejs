@@ -1,68 +1,132 @@
 <%- include ('../partials/header')%>
-<div>
-	<div  class="container">    
-		<% news.forEach(function(article){ %>
-			<!-- <div class="left"> -->
-					<% if(article.theme =="Recent news"){ %>
-						<div class="left_1block">
-							<div class="article1">
-								<a  href="/news/<%= article._id %>"><img class="img1" src="<%= article.image %>"></a>	
-								<div class="left_1block_text">
-									<div class="title1_index"><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
+<div class="container">
+	<div class="flex_container">   
+		<div class="col_1_left">
+			<div class="posts-list">
+				<div class="recent_news">
+					<% news.forEach(function(article){ %>
+						<% if(article.theme =="Recent news"){ %>					
+							<div class="left_1">
+								<a class="img_link" href="/news/<%= article._id %>"><img class="img1" src="<%= article.image %>"></a>	
+								<div class="left_1_text">
+									<div class="title1_index"><a class="title_link" href="/news/<%= article._id %>"><%= article.title %></a></div>
 									<div class="description1_index"><a class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
 								</div>
 							</div>
-						</div>
-					<%}%>		
-	
-					<% if(article.theme =="Cars"){ %>	
-						<div class="left_2block">
-							<div class="article2">
-								<a  href="/news/<%= article._id %>"><img  class="img3" src="<%= article.image %>"></a>			
-								<div class="left_2block_text">
-									<div><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
-									<div class="description_index"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
-								</div>	
-							</div>
-						</div> 
-					<%}%>
-				
-					<% if(article.theme =="Лес"){ %>	
-						<div class="left_3block">
-							<div class="article3">
-								<a  href="/news/<%= article._id %>"><img  class="img3" src="<%= article.image %>"></a>			
-								<div class="left_3block_text">
-									<div><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
-									<div class="description_index"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
-								</div>
-							</div>	
-						</div>
-					<%}%>
-			<!-- </div> -->
-	
-	
-			<!-- <div class="right"> -->
+						<%}%>		
+					<% }); %>
+				</div>
+			</div>
 			
-					<% if(article.theme =="Beauty"){ %>
-						<div class="right_1block">
-							<div class="article_row">
-								<div class="right1_block_theme"><%= article.theme %></div>
-								<a  href="/news/<%= article._id %>"><img class="img4" src="<%= article.image %>"></a>		
-								<div>
-									<div class="title_index_three_row"><a class="title_link" href="/news/<%= article._id %>"><h2><%= article.title %></h2></a></div>
-									<div class="description_index_three_row"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
+			<div class="posts-list">
+				<div class="jokes">
+					<div class="jokes_theme">Приколы</div>
+					<% news.forEach(function(article){ %>
+						<% if(article.theme =="Приколы"){ %>
+							<div class="left_2">
+								<a class="img_link" href="/news/<%= article._id %>"><img class="img4" src="<%= article.image %>"></a>
+								<div class="left_2_text">
+									<div class="title_index"><a class="title_link" href="/news/<%= article._id %>"><%= article.title %></a></div>
+									<div class="rdescription_index"><a class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
 								</div>
 							</div>
-						</div>					
-					<%}%>
-				
+						<%}%>
+					<% }); %>
+				</div>
+			</div>	
 	
-			<!-- </div> -->
+			<div class="posts-list"> 
+				<div class="forest">
+					<div class="forest_theme">Лес</div>
+					<% news.forEach(function(article){ %>
+						<% if(article.theme =="Лес"){ %>	
+							<div class="left_3">
+								<a class="img_link" href="/news/<%= article._id %>"><img  class="img3" src="<%= article.image %>"></a>			
+								<div class="left_3_text">
+									<div class="title_index"><a class="title_link" href="/news/<%= article._id %>"><%= article.title %></a></div>
+									<div class="description_index"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
+								</div>
+							</div>
+						<%}%>
+					<% }); %>
+				</div>
+			</div>
+		</div>
+
+		<div class="col_2_right">
+			<div class="posts-list">
+				<div class="beauty">
+					<div class="beauty_theme">Beauty</div>
+					<% news.forEach(function(article){ %>
+						<% if(article.theme =="Beauty"){ %>
+							<div class="right_1">
+								<a  class="img_link" href="/news/<%= article._id %>"><img class="img4" src="<%= article.image %>"></a>		
+								<div class="right_1_text">
+									<div class="title_index"><a class="title_link" href="/news/<%= article._id %>"><%= article.title %></a></div>
+									<div class="description_index"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
+								</div>
+							</div>					
+						<%}%>
+					<% }); %>
+				</div>
+			</div>
+		</div>
+
+		<div class="col_3_right">
+			<div class="posts-list">
+				<div class="uni">
+					<div class="uni_theme">Универ</div>
+					<% news.forEach(function(article){ %>
+						<% if(article.theme =="Универ"){ %>
+							<div class="right_3">
+								<a class="img_link" href="/news/<%= article._id %>"><img class="img3" src="<%= article.image %>"></a>
+								<div class="right_3_text">
+									<div class="title_index"><a class="title_link" href="/news/<%= article._id %>"><%= article.title %></a></div>
+									<div class="description_index"><a class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
+								</div>
+							</div>
+						<%}%>
+					<% }); %>
+				</div>
+			</div>	
+		</div>
+			<!--<div class="posts-list"> 
+					<div class="cars">
+						<div class="cars_theme">Cars</div>
+							<% news.forEach(function(article){ %>
+								<% if(article.theme =="Cars"){ %>	
+									<div class="right_4">
+										<a class="img_link" href="/news/<%= article._id %>"><img  class="img3" src="<%= article.image %>"></a>			
+										<div class="left_2_text">
+											<div class="title_index"><a class="title_link" href="/news/<%= article._id %>"><%= article.title %></a></div>
+											<div class="description_index"><a  class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
+										</div>	
+									</div> 
+								<%}%>	
+							<% }); %>
+						</div>
+					</div>		
+				</div> 
+			</div>-->
 		
-		<% }); %>
+		<div class="col_4_right">
+			<div class="posts-list">
+				<div class="video">
+					<div class="video_theme">Video</div>
+					<% news.forEach(function(article){ %>
+						<% if(article.theme =="видео"){ %>
+							<div class="right_5">
+								<video src="<%= article.image %>" controls></video>
+								<div class="right_video_text">
+									<div class="title_index"><a class="title_link" href="/news/<%= article._id %>"><%= article.title %></a></div>
+									<div class="right_video_desc description_index"><a class="description_link" href="/news/<%= article._id %>"><%=article.description%></a></div>
+								</div>
+							</div>
+						<%}%>
+					<% }); %>
+				</div>
+			</div>
+		</div>
 	</div>  
-
-</div>
-
-   
-<!-- <%- include ('../partials/footer')%> -->
+</div>   
+<%-include ('../partials/footer')%>
