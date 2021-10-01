@@ -1,6 +1,5 @@
 body, html{
   margin: 0;
-  /* background: yellow; */
   background: rgb(131,58,180);
   background: radial-gradient(circle, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 50%, rgba(252,176,69,0.7036383188914958) 100%); 
 }
@@ -72,11 +71,6 @@ header:after, .container:after, footer:after, .widget-posts-list li:after{
 header{
   position: relative;
 }
-
-/* .nav_wrapper{
-  background: #000;
-} */
-
 .brand{
   font-family: 'Comfortaa', cursive;
   font-size: 200%;
@@ -90,7 +84,6 @@ header{
 }
 
 .cher_span{
-  /* color: rgba(254, 150, 180, 1); */
   color: red;
   text-decoration: upline;
   font-family: 'Dancing Script', cursive;
@@ -123,7 +116,6 @@ li{
 .show_content{
   margin:5% auto;
   background: rgba(255, 255, 255, 0.3);
-  /* background: rgba(0, 0, 0, 0.1); */
   width: 90%;
   padding: 2%;
   border-radius: 22px;
@@ -161,7 +153,6 @@ video{
 }
 
 .title_show{
-  /* display: inline-block; */
   vertical-align: top;
   padding: 1.5%;
   padding-bottom: 0;
@@ -215,8 +206,6 @@ video{
 
 .comments{
   width: 100%;
-  /* background: rgb(131,58,180);
-  background: radial-gradient(circle, rgba(131,58,180,0.35) 0%, rgba(253,29,29,0.35) 50%, rgba(252,176,69,0.35036383188914958) 100%); */
   background: white;
   border-radius: 22px;
   margin-bottom: 2%;
@@ -224,7 +213,6 @@ video{
   font-family: 'Comfortaa', cursive;  
 }
 .comment_author{
-  /* float: none; */
   font-size: 180%;
   border-top: 3px solid rgb(204, 204, 204);
   border-top-left-radius: 22px;
@@ -298,7 +286,6 @@ video{
   padding: 1% 2%;
   color: white;
   background:rgb(20, 236, 13);
-  /* float: right; */
 } 
 
 /* ============================SHOW============================ */
@@ -412,10 +399,8 @@ img{
 }
 
 .footer_rights{
-  /* width: 45%; */
   float: left;
   margin-left: 2%;
-
 }
 
 .footer_icons{
@@ -600,7 +585,7 @@ img{
     font-size: 180%;
   }
 
-  /* .cars{
+  .cars{
     background: white;
     width: 92%;
     border: 2px solid white;
@@ -617,7 +602,7 @@ img{
     margin: 3px;
     margin-left:40px;
     color: black;
-  } */
+  }
 
   .video{
     padding: 1%;
@@ -698,71 +683,6 @@ img{
 }
 
 
-/* @media screen and (max-width:991px) { 
-  .container_index{
-    width: 100%;
-    padding: 2%;
-  }
-  .img1{
-    height: auto;
-  }
-  .img2,.img3,.img4{
-    width: 100%;
-    height: 320px;
-  }
- 
-  .recent_news{
-    width: 100%;
-  }
- 
-  .left_1{
-    width: 82%;
-    margin:auto 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    padding: 4.5%;
-  }
-
-  .left_2,.left_3{
-    width: 40%;
-    /* flex-direction: row-reverse; 
-    margin:auto 10px;
-    margin-bottom: 10px;
-    padding: 2%;
-  }
-  .right_1,.right_2{
-    width: 40%;
-    /* flex-direction: row-reverse; 
-    margin:auto 10px;
-    margin-bottom: 10px;
-    padding: 2%;
-  }
-  .right_3{
-    width: 106%;
-    margin: auto 10px;
-    margin-bottom: 10px;
-
-  }
-  .video{
-     
-    width: 40%;
-    margin-bottom: 10px;
-  } 
-} */
-/* 
-@media screen and (max-width:767px) {
-  .container_index{
-    width: 100%;
-    margin: 10px auto;
-    padding: 3px;
-  }
-  .img2,.img3,.img4{
-    width: 100%;
-    height: 320px;
-    height: 200px;
-  }
-} */
-
 @media screen and (max-width:1023px) {
 
   .hamburger-menu {
@@ -782,14 +702,6 @@ img{
     text-decoration: none;
     transition-duration: .25s;
   }
-  /* .hamburger-menu{
-    position: fixed;
-    top: 0px; 
-    z-index: 999;
-    background: white;
-    height: 60px;
-    margin-bottom: 20px;
-  } */
 
   #menu__toggle {
     opacity: 0;
@@ -888,7 +800,6 @@ img{
   .container{
     width: 90%;
     margin: 2% 1.5%;
-    /* padding: 5%; */
   }
  
   .theme_index{
@@ -899,7 +810,6 @@ img{
     margin-bottom: 1.8%;
     font-size: 250%;
     border-top: 2px solid white;
-    /* background: yellow; */
   }
   .cars_theme,.forest_theme,.jokes_theme,.beauty_theme,.uni_theme,.video_theme{
     color: white;
@@ -910,15 +820,6 @@ img{
     font-size: 250%;
     border-top: 2px solid white;  
   }
-  /* .jokes_theme{
-    color: white;
-    padding-left: 25%;
-    margin-left: 5%;
-    margin-top: 8%;
-    margin-bottom: 1.8%;
-    font-size: 250%;
-    border-top: 2px solid white;  
-  } */
 
  .left_1,.left_2,.left_3,.right_1,.right_2,.right_3,.right_4,.right_5{
    width: 100%;
